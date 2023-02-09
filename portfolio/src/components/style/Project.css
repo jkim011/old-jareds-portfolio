@@ -1,0 +1,12 @@
+.size {
+  height: 300px;
+  width: 500px;
+}
+
+.margin {
+  margin: 10px;
+}
+
+.display {
+  display: inline-flex;
+}
