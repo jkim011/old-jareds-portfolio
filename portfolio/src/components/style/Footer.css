@@ -11,5 +11,6 @@
     float:left;
     width:100%;
     padding:20px 0;
+    display: inline-flex;
 }
 .footer a {float:left; width:100%; text-align:center; }
