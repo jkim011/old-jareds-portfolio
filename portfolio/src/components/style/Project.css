@@ -1,12 +1,18 @@
+/* Card size and positioning */
 .size {
   height: 300px;
   width: 500px;
 }
 
 .margin {
-  margin: 10px;
+  margin: 20px;
 }
 
 .display {
   display: inline-flex;
+}
+
+/* Card text */
+.text-color {
+  color: black;
 }
