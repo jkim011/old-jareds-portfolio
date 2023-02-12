@@ -1,34 +1,19 @@
 /* Card size and positioning */
-/* .size {
-  height: 300px;
+.size {
+  height: 250px;
   width: 500px;
-} */
+}
 
 .margin {
   margin: 20px;
 }
 
-.display {
-  display: flexbox;
-  flex: 1 0 100%;
+/* firgure out how to add border to each project image */
+.border {
+  border: 25px solid red;
 }
 
 /* Card text */
 .text-color {
   color: black;
-}
-
-.border {
-  border: 20px;
-  border-color: black;
-}
-
-.wrap {
-  display: inline-block;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.display {
-  display: flex;
 }

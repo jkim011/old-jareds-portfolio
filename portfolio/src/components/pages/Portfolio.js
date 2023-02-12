@@ -11,35 +11,41 @@ import test4 from '../../assets/projectImages/test4.PNG'
 
 export default function Portfolio() {
   return (
-    <div style={{flexWrap:"wrap"}}>
+    <div>
       <h3>Portfolio:</h3>
-      <div style={{display:"flex", height:"250px", width:"500px"}}> 
-        <Project
-          imageHref="https://www.behindthename.com/random/"
-          imageSrc={test}
-          imageTitle="Test Image"
-          imageDescription="This is the test image"
-        />
-        <Project
-          imageHref="https://www.name-generator.org.uk/rapper/"
-          imageSrc={test2}
-          imageTitle="Test Image 2"
-          imageDescription="This is the second test image"
-        />
-        <Project
-          imageHref="https://www.random.org/"
-          imageSrc={test3}
-          imageTitle="Test Image 3"
-          imageDescription="This is the third test image"
-        />
-        <Project
-          imageHref="https://www.lastpass.com/features/password-generator"
-          imageSrc={test4}
-          imageTitle="Test Image 4"
-          imageDescription="This is the fourth test image"
-        />
-      </div>
-      
+        <div style={{display:'flex', flexWrap:"wrap", flexDirection:"row"}}> 
+          <Project
+            imageHref="https://www.behindthename.com/random/"
+            imageSrc={test}
+            imageTitle="Test Image"
+            imageDescription="This is the test image"
+          />
+          
+          <Project
+            imageHref="https://www.name-generator.org.uk/rapper/"
+            imageSrc={test2}
+            imageTitle="Test Image 2"
+            imageDescription="This is the second test image"
+          />
+
+          <Project
+            imageHref="https://www.random.org/"
+            imageSrc={test3}
+            imageTitle="Test Image 3"
+            imageDescription="This is the third test image"
+          />
+
+          <Project
+            imageHref="https://www.lastpass.com/features/password-generator"
+            imageSrc={test4}
+            imageTitle="Test Image 4"
+            imageDescription="This is the fourth test image"
+          />
+          
+        </div>
     </div>
+      
+      
+
   )
 }
