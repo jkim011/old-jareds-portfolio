@@ -3,12 +3,12 @@ import React from 'react';
 function Nav({ currentPage, handlePageChange }) {
   return (
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
 
-            <li class="nav-item">
+            <li className="nav-item">
               <a 
                 class="nav-link active" aria-current="page" href="#aboutme" 
                 onClick={() => handlePageChange('AboutMe')} 
@@ -18,7 +18,7 @@ function Nav({ currentPage, handlePageChange }) {
               </a>
             </li>
 
-            <li class="nav-item">
+            <li className="nav-item">
               <a 
                 class="nav-link active" aria-current="page" href="#portfolio" 
                 onClick={() => handlePageChange('Portfolio')} 
@@ -28,7 +28,7 @@ function Nav({ currentPage, handlePageChange }) {
               </a>
             </li>
 
-            <li class="nav-item">
+            <li className="nav-item">
               <a 
                 class="nav-link active" aria-current="page" href="#resume" 
                 onClick={() => handlePageChange('Resume')} 
@@ -38,7 +38,7 @@ function Nav({ currentPage, handlePageChange }) {
               </a>
             </li>
 
-            <li class="nav-item">
+            <li className="nav-item">
               <a 
                 class="nav-link active" aria-current="page" href="#contact" 
                 onClick={() => handlePageChange('Contact')} 
