@@ -1,18 +1,34 @@
 /* Card size and positioning */
-.size {
+/* .size {
   height: 300px;
   width: 500px;
-}
+} */
 
 .margin {
   margin: 20px;
 }
 
 .display {
-  display: inline-flex;
+  display: flexbox;
+  flex: 1 0 100%;
 }
 
 /* Card text */
 .text-color {
   color: black;
+}
+
+.border {
+  border: 20px;
+  border-color: black;
+}
+
+.wrap {
+  display: inline-block;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.display {
+  display: flex;
 }
