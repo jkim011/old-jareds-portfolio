@@ -1,0 +1,14 @@
+.navItem {
+  font-size: 20px;
+}
+
+.navBold {
+  font-weight: bolder;
+  transition-duration: .3s;
+}
+
+.navDesign {
+  margin-left: auto;
+  margin-right: 2%;
+  margin-top: -4%;
+}

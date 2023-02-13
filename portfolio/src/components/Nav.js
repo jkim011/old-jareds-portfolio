@@ -1,18 +1,22 @@
 import React from 'react';
 
+import '../components/style/Nav.css'
+
+
 function Nav({ currentPage, handlePageChange }) {
   return (
     
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav navDesign">
 
             <li className="nav-item">
               <a 
-                class="nav-link active" aria-current="page" href="#aboutme" 
+                class="nav-link active" 
+                aria-current="page" href="#aboutme" 
                 onClick={() => handlePageChange('AboutMe')} 
-                className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
+                className= {`navItem ${currentPage === 'AboutMe' ? 'nav-link active navBold' : 'nav-link'}`}
               >
                 About Me
               </a>
@@ -20,9 +24,10 @@ function Nav({ currentPage, handlePageChange }) {
 
             <li className="nav-item">
               <a 
-                class="nav-link active" aria-current="page" href="#portfolio" 
+                class="nav-link active" 
+                aria-current="page" href="#portfolio" 
                 onClick={() => handlePageChange('Portfolio')} 
-                className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                className={`navItem ${currentPage === 'Portfolio' ? 'nav-link active navBold' : 'nav-link'}`}
               >
                 Portfolio
               </a>
@@ -30,9 +35,10 @@ function Nav({ currentPage, handlePageChange }) {
 
             <li className="nav-item">
               <a 
-                class="nav-link active" aria-current="page" href="#resume" 
+                class="nav-link active" 
+                aria-current="page" href="#resume" 
                 onClick={() => handlePageChange('Resume')} 
-                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                className={`navItem ${currentPage === 'Resume' ? 'nav-link active navBold' : 'nav-link'}`}
               >
                 Resume
               </a>
@@ -40,9 +46,10 @@ function Nav({ currentPage, handlePageChange }) {
 
             <li className="nav-item">
               <a 
-                class="nav-link active" aria-current="page" href="#contact" 
+                class="nav-link active" 
+                aria-current="page" href="#contact" 
                 onClick={() => handlePageChange('Contact')} 
-                className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                className={`navItem ${currentPage === 'Contact' ? 'nav-link active navBold' : 'nav-link'}`}
               >
                 Contact
               </a>

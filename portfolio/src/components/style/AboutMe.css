@@ -1,0 +1,23 @@
+.title {
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+.bio {
+  display: inline-flex;
+}
+
+.bioText {
+  font-size: 110%;
+  align-items: center;
+  margin-left: 10%;
+  width: 50%;
+}
+
+.bioImg {
+  margin-left: 5%;
+  height: auto;
+  width: 15%;
+  border-radius: 10px;
+}

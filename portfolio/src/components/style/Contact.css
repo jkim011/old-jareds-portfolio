@@ -1,5 +1,14 @@
-.margins {
-  margin: 1%;
+.title {
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+/* Forms and text boxes */
+.forms {
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .textboxLabel {
@@ -13,19 +22,20 @@
   padding: 3px;
 }
 
-.errorMessage {
-  color: red;
-  font-weight: bold;
-  margin-top: -.5%;
-}
-
+/* Button */
 .submitBtn {
   border-radius: 5px; 
-  margin-left: 1%;
+  margin-left: 5%;
   transition-duration: 0.4s;
 }
 
 .submitBtn:hover {
   background-color: grey;
   color: white;
+}
+
+.errorMessage {
+  color: red;
+  font-weight: bold;
+  margin-top: -.5%;
 }
