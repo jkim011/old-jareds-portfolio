@@ -1,9 +1,12 @@
 import React from 'react';
 
+import '../components/style/Header.css'
+
+
 function Header({ currentPage, handlePageChange }) {
   return (
     <div>
-      <h1>Jared Kim</h1>
+      <h1 className='header'>Jared Kim</h1>
     </div>
   );
 }

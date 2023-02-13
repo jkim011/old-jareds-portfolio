@@ -47,9 +47,9 @@ export default function Contact() {
 
   return (
     <div>
-      <h3 className='margins'>Contact Me:</h3>
+      <h3 className='title'>Contact Me</h3>
       <form>
-        <div className='margins'>
+        <div className='forms'>
           <label className='textboxLabel'>Name:</label><br></br>
           <input
             className='textbox'
@@ -60,7 +60,7 @@ export default function Contact() {
           />
         </div>
         
-        <div className='margins'>
+        <div className='forms'>
           <label className='textboxLabel'>Email:</label><br></br>
           <input
             className='textbox'
@@ -71,7 +71,7 @@ export default function Contact() {
           />
         </div>
         
-        <div className='margins'>
+        <div className='forms'>
           <label className='textboxLabel'>Message:</label><br></br>
           <textarea
             rows={12}
@@ -88,7 +88,7 @@ export default function Contact() {
       </form>
 
       {errorMessage && (
-        <div className='margins'>
+        <div className='forms'>
           <p className='errorMessage'>{errorMessage}</p>
         </div>
       )}

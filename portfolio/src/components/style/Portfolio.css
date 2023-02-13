@@ -1,0 +1,13 @@
+.title {
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 3%;
+}
