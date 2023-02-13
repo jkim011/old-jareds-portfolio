@@ -1,0 +1,26 @@
+.margins {
+  margin: 1%;
+}
+
+.textboxLabel {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.textbox {
+  width: 20%;
+  font-size: 16px;
+  padding: 3px;
+}
+
+.errorMessage {
+  color: red;
+  font-weight: bold;
+  margin-top: -.5%;
+}
+
+.submitBtn {
+  border-radius: 5px; 
+  margin-left: 1%;
+  
+}
