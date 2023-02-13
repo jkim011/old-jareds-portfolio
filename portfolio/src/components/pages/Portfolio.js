@@ -16,6 +16,7 @@ export default function Portfolio() {
         <div style={{display:'flex', flexWrap:"wrap", flexDirection:"row"}}> 
           <Project
             imageHref="https://www.behindthename.com/random/"
+            imageGithub="https://github.com/jkim011/jareds-portfolio"
             imageSrc={test}
             imageTitle="Test Image"
             imageDescription="This is the test image"
@@ -23,6 +24,7 @@ export default function Portfolio() {
           
           <Project
             imageHref="https://www.name-generator.org.uk/rapper/"
+            imageGithub="https://github.com/jkim011/jareds-portfolio"
             imageSrc={test2}
             imageTitle="Test Image 2"
             imageDescription="This is the second test image"
@@ -30,6 +32,7 @@ export default function Portfolio() {
 
           <Project
             imageHref="https://www.random.org/"
+            imageGithub="https://github.com/jkim011/jareds-portfolio"
             imageSrc={test3}
             imageTitle="Test Image 3"
             imageDescription="This is the third test image"
@@ -37,6 +40,7 @@ export default function Portfolio() {
 
           <Project
             imageHref="https://www.lastpass.com/features/password-generator"
+            imageGithub="https://github.com/jkim011/jareds-portfolio"
             imageSrc={test4}
             imageTitle="Test Image 4"
             imageDescription="This is the fourth test image"
