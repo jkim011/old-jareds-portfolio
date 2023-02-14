@@ -13,10 +13,9 @@ function Nav({ currentPage, handlePageChange }) {
 
             <li className="nav-item navItem">
               <a 
-                class="nav-link active" 
                 aria-current="page" href="#aboutme" 
                 onClick={() => handlePageChange('AboutMe')} 
-                className= {`navItem ${currentPage === 'AboutMe' ? 'nav-link active navBold' : 'nav-link'}`}
+                className= {`${currentPage === 'AboutMe' ? 'nav-link active navActive' : 'nav-link navItemColor'}`}
               >
                 About Me
               </a>
@@ -24,10 +23,9 @@ function Nav({ currentPage, handlePageChange }) {
 
             <li className="nav-item navItem">
               <a 
-                class="nav-link active" 
                 aria-current="page" href="#portfolio" 
                 onClick={() => handlePageChange('Portfolio')} 
-                className={`navItem ${currentPage === 'Portfolio' ? 'nav-link active navBold' : 'nav-link'}`}
+                className={`navItem ${currentPage === 'Portfolio' ? 'nav-link active navActive' : 'nav-link navItemColor'}`}
               >
                 Portfolio
               </a>
@@ -35,10 +33,9 @@ function Nav({ currentPage, handlePageChange }) {
 
             <li className="nav-item navItem">
               <a 
-                class="nav-link active" 
                 aria-current="page" href="#resume" 
                 onClick={() => handlePageChange('Resume')} 
-                className={`navItem ${currentPage === 'Resume' ? 'nav-link active navBold' : 'nav-link'}`}
+                className={`navItem ${currentPage === 'Resume' ? 'nav-link active navActive' : 'nav-link navItemColor'}`}
               >
                 Resume
               </a>
@@ -46,10 +43,9 @@ function Nav({ currentPage, handlePageChange }) {
 
             <li className="nav-item navItem">
               <a 
-                class="nav-link active" 
                 aria-current="page" href="#contact" 
                 onClick={() => handlePageChange('Contact')} 
-                className={`navItem ${currentPage === 'Contact' ? 'nav-link active navBold' : 'nav-link'}`}
+                className={`navItem ${currentPage === 'Contact' ? 'nav-link active navActive' : 'nav-link navItemColor'}`}
               >
                 Contact
               </a>

@@ -6,14 +6,16 @@
 
 .resumeLink {
   text-decoration: none;
-  color: black;
+  color: #e1deec;
 }
 
 .resumeLink:hover {
-  font-size: 98%;
-  color: black;
+  transition: .2s ease;
+  font-weight: bold;
+  color: #9993af;
 }
 
 .resumeContents {
   margin-left: 5%;
+  color: #e1deec;
 }

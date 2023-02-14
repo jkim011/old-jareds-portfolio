@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import '../components/style/Container.css'
+
 import Nav from './Nav';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
@@ -28,11 +30,17 @@ export default function Container() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
-      <Header/>
-      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      <Footer/>
-      {renderPage()}
-    </div>
+    <main>
+      <div className='everything'>
+        <div className='headerSection'>
+          <Header/>
+          <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+        </div>
+        
+        <Footer/>
+        {renderPage()}
+      </div>
+    </main>
+    
   );
 }

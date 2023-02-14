@@ -10,7 +10,7 @@ export default function Resume() {
       <h3 className='title'>Resume</h3>
 
         <a className='resumeLink' href={resumePdf} download='jareds-coding-resume.pdf'>
-          <p className='resumeContents'>Click to download resume</p>
+          <p className='resumeContents resumeLink'>Click to download resume</p>
         </a>
         
         <div className='resumeContents'>

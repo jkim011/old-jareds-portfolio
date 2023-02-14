@@ -6,7 +6,7 @@ import profilePic from '../../assets/portfolioPic.jpg'
 
 export default function AboutMe() {
   return (
-    <div>
+    <div style={{marginBottom:"10px"}}>
       <h3 className='title'>About Me</h3>
       <div className='bio'>
         <img className='bioImg' src={profilePic} alt="Profile"/>
