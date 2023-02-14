@@ -6,7 +6,7 @@ import githubLogo from '../assets/logoImages/githubLogo.png'
 import linkedinLogo from '../assets/logoImages/linkedinLogo.png'
 import twitterLogo from '../assets/logoImages/twitterLogo.png'
 
-function Footer({ currentPage, handlePageChange }) {
+function Footer() {
   return (
     <div className="footerWrap">
         <div className="footer">
