@@ -1,18 +1,19 @@
 import React from 'react';
 
-import '../style/Portfolio.css'
+import '../style/Resume.css'
 
+import resumePdf from '../../assets/jareds-coding-resume.pdf'
 
 export default function Resume() {
   return (
     <div>
       <h3 className='title'>Resume</h3>
 
-        <a style={{textDecoration:"none"}} href='...'>
-          <p style={{marginLeft:"5%"}}>Click to download resume</p>
+        <a className='resumeLink' href={resumePdf} download='jareds-coding-resume.pdf'>
+          <p className='resumeContents'>Click to download resume</p>
         </a>
         
-        <div style={{marginLeft:"5%"}}>
+        <div className='resumeContents'>
           <h5>Front-End Proficiencies</h5>
            <ul>
               <li>React</li>
@@ -24,7 +25,7 @@ export default function Resume() {
             </ul>
         </div>      
 
-        <div style={{marginLeft:"5%"}}>
+        <div className='resumeContents'>
           <h5>Back-End Proficiencies</h5>
           <ul>
             <li>APIs</li>

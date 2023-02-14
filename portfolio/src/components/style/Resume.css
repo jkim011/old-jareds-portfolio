@@ -4,6 +4,16 @@
   margin-top: 1%;
 }
 
-/* .something {
+.resumeLink {
+  text-decoration: none;
+  color: black;
+}
+
+.resumeLink:hover {
+  font-size: 98%;
+  color: black;
+}
+
+.resumeContents {
   margin-left: 5%;
-} */
+}
