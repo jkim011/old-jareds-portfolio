@@ -2,10 +2,12 @@
   margin-left: 5%;
   margin-bottom: 2%;
   margin-top: 1%;
+  color: #e1deec;
 }
 
 .bio {
   display: inline-flex;
+  /* background-color:#b7b1d2; */
 }
 
 .bioText {
@@ -13,6 +15,7 @@
   align-items: center;
   margin-left: 10%;
   width: 50%;
+  color: #e1deec;
 }
 
 .bioImg {
@@ -20,4 +23,5 @@
   height: auto;
   width: 15%;
   border-radius: 10px;
+  border: solid #e1deec 2px;
 }

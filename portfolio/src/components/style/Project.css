@@ -23,8 +23,7 @@
 
 .textDecoration:hover {
   opacity: 1;
-  color: black;
-  font-style: italic;
+  color: indigo;
 }
 
 .descriptionText {

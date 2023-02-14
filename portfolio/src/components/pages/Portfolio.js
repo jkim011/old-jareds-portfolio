@@ -5,10 +5,12 @@ import Project from '../Project';
 import '../style/Portfolio.css'
 
 // Import project images to display on portfolio page
-import test from '../../assets/projectImages/test.PNG'
-import test2 from '../../assets/projectImages/test2.PNG'
-import test3 from '../../assets/projectImages/test3.PNG'
-import test4 from '../../assets/projectImages/test4.PNG'
+import teamProfileGenerator from '../../assets/projectImages/team-profile-generator.PNG'
+import textEditor from '../../assets/projectImages/text-editor.png'
+import noteTaker from '../../assets/projectImages/note-taker.PNG'
+import socialNetworkApi from '../../assets/projectImages/social-network-api.png'
+import employeeTracker from '../../assets/projectImages/employee-tracker.PNG'
+import ecommerceBackend from '../../assets/projectImages/ecommerce-backend.PNG'
 
 
 export default function Portfolio() {
@@ -17,35 +19,51 @@ export default function Portfolio() {
       <h3 className='title'>Portfolio</h3>
         <div className='projectContainer'> 
           <Project
-            imageHref="https://www.behindthename.com/random/"
-            imageGithub="https://github.com/jkim011/jareds-portfolio"
-            imageSrc={test}
-            imageTitle="Test Image"
-            // imageDescription="This is the test image"
+            imageHref="https://github.com/jkim011/jareds-team-profile-generator"
+            imageGithub="https://github.com/jkim011/jareds-team-profile-generator"
+            imageSrc={teamProfileGenerator}
+            imageTitle="Team Profile Generator"
+            imageDescription="Run with node.js"
           />
           
           <Project
-            imageHref="https://www.name-generator.org.uk/rapper/"
-            imageGithub="https://github.com/jkim011/jareds-portfolio"
-            imageSrc={test2}
-            imageTitle="Test Image 2"
-            // imageDescription="This is the second test image"
+            imageHref="https://jareds-text-editor.herokuapp.com/"
+            imageGithub="https://github.com/jkim011/jareds-text-editor"
+            imageSrc={textEditor}
+            imageTitle="Text Editor"
+            imageDescription="Built as a PWA"
           />
 
           <Project
-            imageHref="https://www.random.org/"
-            imageGithub="https://github.com/jkim011/jareds-portfolio"
-            imageSrc={test3}
-            imageTitle="Test Image 3"
-            // imageDescription="This is the third test image"
+            imageHref="https://jareds-note-taker.herokuapp.com/"
+            imageGithub="https://github.com/jkim011/jareds-note-taker"
+            imageSrc={noteTaker}
+            imageTitle="Note Taker"
+            imageDescription="Built with Express.js"
           />
 
           <Project
             imageHref="https://www.lastpass.com/features/password-generator"
             imageGithub="https://github.com/jkim011/jareds-portfolio"
-            imageSrc={test4}
-            imageTitle="Test Image 4"
-            // imageDescription="This is the fourth test image"
+            imageSrc={socialNetworkApi}
+            imageTitle="Social Network API"
+            imageDescription="API and back-end functionality for social network application. Built with MongoDB."
+          />
+
+          <Project
+            imageHref="https://github.com/jkim011/jareds-employee-tracker#installation"
+            imageGithub="https://github.com/jkim011/jareds-employee-tracker"
+            imageSrc={employeeTracker}
+            imageTitle="Employee Tracker"
+            imageDescription="Tracks, adds, updates, and deletes employees from MySql database. Ran in the terminal with node."
+          />
+
+          <Project
+            imageHref="https://github.com/jkim011/jareds-ORM-challenge#installation"
+            imageGithub="https://github.com/jkim011/jareds-ORM-challenge"
+            imageSrc={ecommerceBackend}
+            imageTitle="ORM E-commerce back-end"
+            imageDescription="Back-end of an e-commerce site using express and sequelize"
           />
           
         </div>
