@@ -11,7 +11,7 @@ function Nav({ currentPage, handlePageChange }) {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav navDesign">
 
-            <li className="nav-item">
+            <li className="nav-item navItem">
               <a 
                 class="nav-link active" 
                 aria-current="page" href="#aboutme" 
@@ -22,7 +22,7 @@ function Nav({ currentPage, handlePageChange }) {
               </a>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item navItem">
               <a 
                 class="nav-link active" 
                 aria-current="page" href="#portfolio" 
@@ -33,7 +33,7 @@ function Nav({ currentPage, handlePageChange }) {
               </a>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item navItem">
               <a 
                 class="nav-link active" 
                 aria-current="page" href="#resume" 
@@ -44,7 +44,7 @@ function Nav({ currentPage, handlePageChange }) {
               </a>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item navItem">
               <a 
                 class="nav-link active" 
                 aria-current="page" href="#contact" 

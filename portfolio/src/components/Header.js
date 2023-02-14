@@ -3,7 +3,7 @@ import React from 'react';
 import '../components/style/Header.css'
 
 
-function Header({ currentPage, handlePageChange }) {
+function Header() {
   return (
     <div>
       <h1 className='header'>Jared Kim</h1>

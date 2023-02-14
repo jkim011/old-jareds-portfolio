@@ -3,14 +3,26 @@
     position:fixed;
     bottom: 0px;
 }
+
 .footer {
     width:400px;
     margin:auto;
 }
+
 .footerContent {
     float:left;
     width:100%;
     padding:20px 0;
     display: inline-flex;
 }
-.footer a {float:left; width:100%; text-align:center; }
+
+.footer a {
+    float:left; 
+    width:100%; 
+    text-align:center; 
+}
+
+.footer a img:hover {
+  height: auto;
+  width: 40%;
+}
