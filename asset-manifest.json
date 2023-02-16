@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/jareds-portfolio/static/css/main.092735d7.css",
+    "main.js": "/jareds-portfolio/static/js/main.a288cf6b.js",
+    "static/media/ecommerce-backend.PNG": "/jareds-portfolio/static/media/ecommerce-backend.5c15a778b0593940b68b.PNG",
+    "static/media/portfolioPic.jpg": "/jareds-portfolio/static/media/portfolioPic.b1809b7f9cdbd8d15e9d.jpg",
+    "static/media/employee-tracker.PNG": "/jareds-portfolio/static/media/employee-tracker.8e2458cd6ac99a7069ff.PNG",
+    "static/media/jareds-coding-resume.pdf": "/jareds-portfolio/static/media/jareds-coding-resume.fbca1b7679d11dca085f.pdf",
+    "static/media/social-network-api.png": "/jareds-portfolio/static/media/social-network-api.681c517db2d92c2e0c49.png",
+    "static/media/text-editor.png": "/jareds-portfolio/static/media/text-editor.58f49fbff49b6cf14896.png",
+    "static/media/team-profile-generator.PNG": "/jareds-portfolio/static/media/team-profile-generator.4e1ad3f62e5844b4ecc2.PNG",
+    "static/media/note-taker.PNG": "/jareds-portfolio/static/media/note-taker.fa00fa73e3827ae83030.PNG",
+    "index.html": "/jareds-portfolio/index.html",
+    "main.092735d7.css.map": "/jareds-portfolio/static/css/main.092735d7.css.map",
+    "main.a288cf6b.js.map": "/jareds-portfolio/static/js/main.a288cf6b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.092735d7.css",
+    "static/js/main.a288cf6b.js"
+  ]
+}
