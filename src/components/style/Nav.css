@@ -11,7 +11,7 @@
 
 /* figure out why these styles not being added */
 .navItemColor {
-  color:#b7b1d2
+  color:#b7b1d2;
 }
 .navActive {
   transition-duration: .3s;
