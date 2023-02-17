@@ -12,15 +12,15 @@
   * [Questions](#questions)
   
   ## Description
-  This is portfolio contains projects demonstrating Jared's skills as a full stack developer. It was built fully with React and used Bootstrap for styling.
+  This portfolio contains projects demonstrating Jared's skills as a full stack developer. It was built fully with React and uses Bootstrap for styling.
 
   ## Installation
   1. Fork repository
   2. Run ```npm i``` 
 
   ## Usage
-  * ```npm run start```
-  * Use link to deployed app: 
+  * ```npm run start``` to run on localhost
+  * Use link to deployed app: https://jkim011.github.io/jareds-portfolio/
   
   ## License 
 This application is covered under the following license:
