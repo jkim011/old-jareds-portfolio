@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jareds-portfolio/static/css/main.092735d7.css",
-    "main.js": "/jareds-portfolio/static/js/main.a288cf6b.js",
+    "main.css": "/jareds-portfolio/static/css/main.c19633dc.css",
+    "main.js": "/jareds-portfolio/static/js/main.18a47ef5.js",
     "static/media/ecommerce-backend.PNG": "/jareds-portfolio/static/media/ecommerce-backend.5c15a778b0593940b68b.PNG",
     "static/media/portfolioPic.jpg": "/jareds-portfolio/static/media/portfolioPic.b1809b7f9cdbd8d15e9d.jpg",
     "static/media/employee-tracker.PNG": "/jareds-portfolio/static/media/employee-tracker.8e2458cd6ac99a7069ff.PNG",
@@ -11,11 +11,11 @@
     "static/media/team-profile-generator.PNG": "/jareds-portfolio/static/media/team-profile-generator.4e1ad3f62e5844b4ecc2.PNG",
     "static/media/note-taker.PNG": "/jareds-portfolio/static/media/note-taker.fa00fa73e3827ae83030.PNG",
     "index.html": "/jareds-portfolio/index.html",
-    "main.092735d7.css.map": "/jareds-portfolio/static/css/main.092735d7.css.map",
-    "main.a288cf6b.js.map": "/jareds-portfolio/static/js/main.a288cf6b.js.map"
+    "main.c19633dc.css.map": "/jareds-portfolio/static/css/main.c19633dc.css.map",
+    "main.18a47ef5.js.map": "/jareds-portfolio/static/js/main.18a47ef5.js.map"
   },
   "entrypoints": [
-    "static/css/main.092735d7.css",
-    "static/js/main.a288cf6b.js"
+    "static/css/main.c19633dc.css",
+    "static/js/main.18a47ef5.js"
   ]
 }
