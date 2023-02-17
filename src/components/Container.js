@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import '../components/style/Container.css'
+import '../components/style/index.css'
 
 import Nav from './Nav';
 import AboutMe from './pages/AboutMe';
@@ -35,9 +35,9 @@ export default function Container() {
         <div className='headerSection'>
           <Header/>
           <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-        </div>
+        </div> 
         
-        <Footer/>
+        {/* <Footer/> */}
         {renderPage()}
       </div>
     </main>

@@ -1,12 +1,6 @@
-.title {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  margin-top: 1%;
-}
-
 .resumeLink {
-  text-decoration: none;
   color: #e1deec;
+  font-size: 110%;
 }
 
 .resumeLink:hover {
@@ -15,7 +9,14 @@
   color: #9993af;
 }
 
-.resumeContents {
-  margin-left: 5%;
+.resumeContainer {
+  /* margin-left: 5%; */
+  text-align: center;
   color: #e1deec;
+}
+
+.resumeContainer ul {
+  display: inline-block;
+  text-align: left;
+  padding-right: 5%;
 }

@@ -1,33 +1,32 @@
-.title {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  margin-top: 1%;
-}
-
 /* Forms and text boxes */
 .forms {
-  margin-left: 5%;
+  /* margin-left: 5%; */
+  text-align: center;
   margin-top: 1%;
   margin-bottom: 1%;
 }
 
 .textboxLabel {
+  display: inline-block;
   font-size: 125%;
   font-weight: bold;
   color: #e1deec;
 }
 
 .textbox {
-  width: 20%;
+  width: 450px;
   font-size: 16px;
   padding: 3px;
 }
 
 /* Button */
+.btnContainer {
+  text-align: center;
+}
+
 .submitBtn {
   border: solid #e1deec 1px;
   border-radius: 5px; 
-  margin-left: 5%;
   transition-duration: 0.4s;
 }
 
@@ -38,6 +37,17 @@
 
 .errorMessage {
   color: white;
+  font-size: 110%;
   font-weight: bold;
   margin-top: -.5%;
+}
+
+@media screen and (max-width:960px) {
+  .contactContainer {
+    padding-bottom: 40px;
+  }
+
+  .textbox {
+    width: 350px;
+  }
 }

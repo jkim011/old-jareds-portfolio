@@ -1,14 +1,14 @@
 import React from 'react';
 
-import '../components/style/Nav.css'
+import '../components/style/index.css'
 
 
 function Nav({ currentPage, handlePageChange }) {
   return (
     
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
-        <div className="collapse navbar-collapse" id="navbarNav">
+      {/* <div className="container-fluid"> */}
+        {/* <div className="collapse navbar-collapse" id="navbarNav"> */}
           <ul className="navbar-nav navDesign">
 
             <li className="nav-item navItem">
@@ -52,8 +52,8 @@ function Nav({ currentPage, handlePageChange }) {
             </li>
 
           </ul>
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
     </nav>
   )
 }
