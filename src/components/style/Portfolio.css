@@ -1,13 +1,64 @@
-.title {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  margin-top: 1%;
-}
-
+/* Container on Portfolio.js */
 .projectContainer {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 5%;
-  margin-right: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for Project.js */
+/* Card size and positioning */
+.size {
+  height: 250px;
+  width: 500px;
+}
+
+.margin {
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 4%;
+}
+
+.border {
+  border: solid black 5px;
+}
+
+/* Card text */
+.textDecoration {
+  text-decoration: none;
+  color: black;
+  opacity: .5;
+  transition: .5s ease;
+}
+
+.textDecoration:hover {
+  opacity: 1;
+  color: indigo;
+}
+
+.descriptionText {
+  color: black;
+}
+
+/* Hover effects on project images */
+.card:hover card-img {
+  opacity: .5;
+  transition: .5s ease;
+  border: solid white 5px;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  background-color: rgba(248, 248, 255, 0.726);
+}
+
+.card-img-overlay:hover {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.githubLink {
+  border-radius: 20px;
 }

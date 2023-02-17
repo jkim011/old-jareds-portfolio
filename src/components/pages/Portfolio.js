@@ -17,6 +17,7 @@ export default function Portfolio() {
   return (
     <div>
       <h3 className='title'>Portfolio</h3>
+      <hr className='divider'></hr>
         <div className='projectContainer'> 
           <Project
             imageHref="https://github.com/jkim011/jareds-team-profile-generator"

@@ -46,8 +46,9 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div className='contactContainer'>
       <h3 className='title'>Contact Me</h3>
+      <hr className='divider'></hr>
       <form>
         <div className='forms'>
           <label className='textboxLabel'>Name:</label><br></br>
@@ -82,8 +83,10 @@ export default function Contact() {
             type="textarea"
           />
         </div>
-        
-        <button type='button' className='submitBtn' onClick={handleFormSubmit}>Submit</button>
+
+        <div className='btnContainer'>
+          <button type='button' className='submitBtn' onClick={handleFormSubmit}>Submit</button>
+        </div>
 
       </form>
 

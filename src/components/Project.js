@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../components/style/Project.css'
+import '../components/style/Portfolio.css'
 import githubLogo from '../assets/logoImages/githubLogo.png'
 
 

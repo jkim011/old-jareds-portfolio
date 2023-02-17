@@ -1,0 +1,58 @@
+.everything {
+  background-color: #4b3d8f;
+  min-height: 100vh
+  /* height: 100%; */
+}
+
+
+/* Section for header and nav */
+.headerSection {
+  background-color: #e1deec;
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  color: #4b3d8f;
+  text-align: center;
+}
+
+.navDesign {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -.5%;
+}
+
+.navItem {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline;
+  text-align: center;
+}
+/* figure out why these styles not being added */
+.navItemColor {
+  color:#b7b1d2;
+}
+.navActive {
+  transition-duration: .3s;
+  color: #37a987;
+}
+
+
+/* For each page */
+.title {
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  color: #e1deec;
+}
+
+.divider {
+  border-top: 3px solid indigo;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}

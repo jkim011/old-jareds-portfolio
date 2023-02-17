@@ -8,21 +8,25 @@ import twitterLogo from '../assets/logoImages/twitterLogo.png'
 
 function Footer() {
   return (
-    <div className="footerWrap">
-        <div className="footer">
-            <div className="footerContent">
-                <a href="https://github.com/jkim011" target="_blank" rel="noreferrer">
-                    <img src={githubLogo} alt="GitHub"></img>
-                </a>
-                <a href="https://www.linkedin.com/in/jared-kim/" target="_blank" rel="noreferrer">
-                    <img src={linkedinLogo} alt="LinkedIn"></img>
-                </a>
-                <a href="https://twitter.com/jkim0111" target="_blank" rel="noreferrer">
-                    <img src={twitterLogo} alt="Twitter"></img>
-                </a>
-            </div>     
+    <div>
+        <hr className='divider'></hr>
+        <div className="footerWrap">      
+            <div className="footer">
+                <div className="footerContent">
+                    <a href="https://github.com/jkim011" target="_blank" rel="noreferrer">
+                        <img src={githubLogo} alt="GitHub"></img>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jared-kim/" target="_blank" rel="noreferrer">
+                        <img src={linkedinLogo} alt="LinkedIn"></img>
+                    </a>
+                    <a href="https://twitter.com/jkim0111" target="_blank" rel="noreferrer">
+                        <img src={twitterLogo} alt="Twitter"></img>
+                    </a>
+                </div>     
+            </div>
         </div>
     </div>
+    
   );
 }
 
