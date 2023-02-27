@@ -20,7 +20,7 @@ export default function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+    emailjs.sendForm("gmail_service", "template_xby6m0n", form.current, "tYk5_UArLITlqQJKE")
       .then((result) => {
           console.log(result.text);
           
