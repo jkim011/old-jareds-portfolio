@@ -1,100 +1,60 @@
 import React, {useState} from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import '../style/Contact.css'
 
-import {validateEmail} from '../../utils/helpers';
+// import {validateEmail} from '../../utils/helpers';
+
+const Result = () => {
+  return (
+    <p>Message successfully sent! I will contact you back ASAP</p>
+  )
+}
 
 export default function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [result, showResult] = useState(false);
 
-  const handleInputChange = (e) => {
-    const {target} = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-    if (inputType === "name") {
-      setName(inputValue);
-    } else if (inputType === "email") {
-      setEmail(inputValue);
-    } else {
-      setMessage(inputValue);
-    }
-  };
+  const form = useRef();
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (!name) {
-      setErrorMessage("Please enter your name")
-      return;
-    }
-    if (!validateEmail(email)) {
-      setErrorMessage("Please enter a valid email");
-      return;
-    }
-    if (!message) {
-      setErrorMessage("Please enter a message")
-      return;
-    }
-    alert("Message sent!");
 
-    setName('');
-    setEmail('');
-    setMessage('');
-    setErrorMessage('');
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text);
+          
+      }, (error) => {
+          console.log(error.text);
+      }
+    );
+    e.target.reset();
+    showResult(true);
   };
 
   return (
     <div className='contactContainer'>
       <h3 className='title'>Contact Me</h3>
       <hr className='divider'></hr>
-      <form>
+      <form ref={form} onSubmit={handleFormSubmit}>
         <div className='forms'>
-          <label className='textboxLabel'>Name:</label><br></br>
-          <input
-            className='textbox'
-            value={name}
-            name="name"
-            onChange={handleInputChange}
-            type="text"
-          />
+          <label className='textboxLabel'>Name</label> <br/>
+          <input className='textbox' type="text" name="user_name" />
         </div>
-        
         <div className='forms'>
-          <label className='textboxLabel'>Email:</label><br></br>
-          <input
-            className='textbox'
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            type="email"
-          />
+          <label className='textboxLabel'>Email</label> <br/>
+          <input className='textbox' type="email" name="user_email" />
         </div>
-        
         <div className='forms'>
-          <label className='textboxLabel'>Message:</label><br></br>
-          <textarea
-            rows={12}
-            className='textbox'
-            value={message}
-            name="message"
-            onChange={handleInputChange}
-            type="textarea"
-          />
+          <label className='textboxLabel'>Message</label> <br/>
+          <textarea className='textbox' rows={12} name="user_message" />
         </div>
-
         <div className='btnContainer'>
-          <button type='button' className='submitBtn' onClick={handleFormSubmit}>Submit</button>
-        </div>
-
+          <input className='submitBtn' type="submit" value="Submit" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
+        </div>  
       </form>
 
-      {errorMessage && (
-        <div className='forms'>
-          <p className='errorMessage'>{errorMessage}</p>
-        </div>
-      )}
+      <div className='result'>{result ? <Result /> : null}</div>
 
     </div>
   );
