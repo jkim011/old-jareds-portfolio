@@ -5,6 +5,7 @@ import Project from '../Project';
 import '../style/Portfolio.css'
 
 // Import project images to display on portfolio page
+import gitfund from '../../assets/projectImages/gitfund.PNG'
 import teamProfileGenerator from '../../assets/projectImages/team-profile-generator.PNG'
 import textEditor from '../../assets/projectImages/text-editor.png'
 import noteTaker from '../../assets/projectImages/note-taker.PNG'
@@ -19,12 +20,12 @@ export default function Portfolio() {
       <h3 className='title'>Portfolio</h3>
       <hr className='divider'></hr>
         <div className='projectContainer'> 
-          <Project
-            imageHref="https://github.com/jkim011/jareds-team-profile-generator"
-            imageGithub="https://github.com/jkim011/jareds-team-profile-generator"
-            imageSrc={teamProfileGenerator}
-            imageTitle="Team Profile Generator"
-            imageDescription="Run with node.js"
+        <Project
+            imageHref="https://git-fund.herokuapp.com/"
+            imageGithub="https://github.com/RyStreet/git-fund"
+            imageSrc={gitfund}
+            imageTitle="GitFund"
+            imageDescription="MERN Stack application. Crowdfunding and collaborating social app where users can post projects to recieve donations, and put them up for others to collaborate on."
           />
           
           <Project
@@ -32,23 +33,31 @@ export default function Portfolio() {
             imageGithub="https://github.com/jkim011/jareds-text-editor"
             imageSrc={textEditor}
             imageTitle="Text Editor"
-            imageDescription="Built as a PWA"
+            imageDescription="PWA. An installable text editor application with offline use capabilities. Uses IndexedDB for storage."
           />
+
+          <Project
+            imageHref="https://github.com/jkim011/jareds-team-profile-generator"
+            imageGithub="https://github.com/jkim011/jareds-team-profile-generator"
+            imageSrc={teamProfileGenerator}
+            imageTitle="Team Profile Generator"
+            imageDescription="Node.js. An application that can generate a team with the names of employees, their roles, and contact info. It is ran in the terminal and then creates an index.html file with the newly generated team profile."
+          />        
 
           <Project
             imageHref="https://jareds-note-taker.herokuapp.com/"
             imageGithub="https://github.com/jkim011/jareds-note-taker"
             imageSrc={noteTaker}
             imageTitle="Note Taker"
-            imageDescription="Built with Express.js"
+            imageDescription="Express.js. A note taking application where users can write, save, and delete notes."
           />
 
           <Project
-            imageHref="https://www.lastpass.com/features/password-generator"
-            imageGithub="https://github.com/jkim011/jareds-portfolio"
+            imageHref="https://github.com/jkim011/jareds-social-network-api"
+            imageGithub="https://github.com/jkim011/jareds-social-network-api"
             imageSrc={socialNetworkApi}
             imageTitle="Social Network API"
-            imageDescription="API and back-end functionality for social network application. Built with MongoDB."
+            imageDescription="Built with MongoDB. This repository is the API and back-end functionality for a social network application. No front end has been created yet."
           />
 
           <Project
@@ -56,7 +65,7 @@ export default function Portfolio() {
             imageGithub="https://github.com/jkim011/jareds-employee-tracker"
             imageSrc={employeeTracker}
             imageTitle="Employee Tracker"
-            imageDescription="Tracks, adds, updates, and deletes employees from MySql database. Ran in the terminal with node."
+            imageDescription="Using MySQL. This application is ran in the terminal with node. It tracks, adds, updates, and deletes employees from a MySql database."
           />
 
           <Project
@@ -64,7 +73,7 @@ export default function Portfolio() {
             imageGithub="https://github.com/jkim011/jareds-ORM-challenge"
             imageSrc={ecommerceBackend}
             imageTitle="ORM E-commerce back-end"
-            imageDescription="Back-end of an e-commerce site using express and sequelize"
+            imageDescription="Express and Sequelize. This repository contains the back-end of an e-commerce site. No front end has been created yet."
           />
           
         </div>

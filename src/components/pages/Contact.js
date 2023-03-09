@@ -4,13 +4,31 @@ import emailjs from '@emailjs/browser';
 
 import '../style/Contact.css'
 
-// import {validateEmail} from '../../utils/helpers';
+import {validateEmail} from '../../utils/helpers';
 
 const Result = () => {
   return (
     <p>Message successfully sent! I will contact you back ASAP</p>
   )
-}
+};
+
+// const NameInput = () => {
+//   return (
+//     <p>Please enter your name</p>
+//   )
+// };
+
+// const EmailValidation = () => {
+//   return (
+//     <p>Please enter a valid email</p>
+//   )
+// };
+
+// const MessageInput = () => {
+//   return (
+//     <p>Please enter a message</p>
+//   )
+// };
 
 export default function Contact() {
   const [result, showResult] = useState(false);
@@ -19,6 +37,7 @@ export default function Contact() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+
 
     emailjs.sendForm("gmail_service", "template_xby6m0n", form.current, "tYk5_UArLITlqQJKE")
       .then((result) => {
@@ -39,15 +58,15 @@ export default function Contact() {
       <form ref={form} onSubmit={handleFormSubmit}>
         <div className='forms'>
           <label className='textboxLabel'>Name</label> <br/>
-          <input className='textbox' type="text" name="user_name" />
+          <input id='name' className='textbox' type="text" name="user_name" />
         </div>
         <div className='forms'>
           <label className='textboxLabel'>Email</label> <br/>
-          <input className='textbox' type="email" name="user_email" />
+          <input id='email' className='textbox' type="email" name="user_email" />
         </div>
         <div className='forms'>
           <label className='textboxLabel'>Message</label> <br/>
-          <textarea className='textbox' rows={12} name="user_message" />
+          <textarea id='message' className='textbox' rows={12} name="user_message" />
         </div>
         <div className='btnContainer'>
           <input className='submitBtn' type="submit" value="Submit" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
